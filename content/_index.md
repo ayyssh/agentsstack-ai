@@ -1,9 +1,9 @@
 ---
 banner:
-  title: "Andromeda is the most intuitive </br> way to prototype Designs"
+  title: "Revolutionizing Industries with AI-Powered Solutions"
   image: /images/banner-app.png
   link:
-    label: Get Premium Version
+    label: Get In Touch
     href: "https://themefisher.com/products/andromeda-nextjs"
 
 ##brands
@@ -20,9 +20,9 @@ brands:
 
 #features
 features:
-  sub_title: SPECIAL FEATURES
-  title: Elements To </br> Get You Started
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  sub_title: WHAT IS AGENTSSTACK
+  title: Unlock Your Business Potential </br> with Cutting-Edge Technology
+  description: We deliver high-value, AI-powered solutions to complex problems across various industries. </br> Our mission is to accelerate digital transformation and unlock human potential through innovative technology.
   list:
     - icon: 'lock' # feather icon: https://feathericons.com/
       title: Updated Security

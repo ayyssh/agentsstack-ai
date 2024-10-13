@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Andromeda Light Nextjs",
+    "title": "Agentsstack",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.svg",
     "logo_width": "240",
     "logo_height": "34",
-    "logo_text": "Andromeda"
+    "logo_text": "Agentsstack"
   },
 
   "settings": {
@@ -24,7 +24,7 @@
 
   "contact_info": {
     "phone": "+887887998",
-    "email": "info@andromeda.io",
+    "email": "info@agentsstack.com",
     "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624"
   },
 

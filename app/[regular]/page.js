@@ -5,6 +5,8 @@ import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import SeoMeta from "@layouts/partials/SeoMeta";
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
+import IndustriesSection from "./IndustriesSection";
+
 
 // for all regular pages
 const RegularPages = async ({ params }) => {

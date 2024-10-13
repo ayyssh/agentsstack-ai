@@ -4,7 +4,7 @@ import ImageFallback from "@layouts/components/ImageFallback";
 import { markdownify } from "@lib/utils/textConverter";
 import { useRef } from "react";
 import { TbQuote } from "react-icons/tb";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Testimonial = ({ testimonial }) => {
