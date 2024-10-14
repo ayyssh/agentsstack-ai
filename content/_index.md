@@ -25,23 +25,17 @@ features:
   description: We deliver high-value, AI-powered solutions to complex problems across various industries. </br> Our mission is to accelerate digital transformation and unlock human potential through innovative technology.
   list:
     - icon: 'lock' # feather icon: https://feathericons.com/
-      title: Updated Security
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Rapid Delivery
+      content: Solutions implemented in weeks, not months
     - icon: 'wind'
-      title: Magnetic Turning
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Cutting-Edge Technology
+      content: Leverage AI, machine learning, and IoT for transformative results
     - icon: 'shield'
-      title: Secured & up-to-date
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Industry-Specific Expertise
+      content: Tailored solutions for your unique challenges
     - icon: 'link'
-      title: Instant Link Sharing
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'lock'
-      title: Updated Security
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
-    - icon: 'wind'
-      title: Magnetic Turning
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque enim id diam ornare volutpat in sagitis, aliquet. Arcu cursus
+      title: Proven Track Record
+      content: Successful engagements with global industry leaders
 
 #intro
 intro:
@@ -54,15 +48,23 @@ intro:
 #speciality
 speciality:
   primary:
-    title: You Will Not Miss Your All Misunderstandings
-    subtitle: PRIMARY SPECIALITY
-    description: Protect your design vision and leave nothing up to interpretation with interaction recipes. Quickly share and access all your team members interactions by using libraries, ensuring consistency throughout the.
+    title: Never Miss A Critical Insight
+    subtitle: Transforming Healthcare with AI
+    description: Enhance patient care with our mHealth app, designed to remotely identify respiratory issues using advanced ML\/AI. Streamline data collection, reduce costs, and improve patient outcomes with our innovative technology. </br> <strong>Impact</strong> - Saved 5,250 clinical hours and $525,000 in data collection costs.
     image: /images/features-01.png
+    buttonLink: '#'
   secondary:
-    title: Say Hello To No-Code The Advance Creation
-    subtitle: SECONDARY SPECIALITY
-    description: From the simplest of interactions to those that use Excel-gradeing formulas, ProtoPie can handle them all. Make mind-blowing of New interactions everyday without ever having to write any new code.
+    title: Revolutionizing Safety in Oil & Gas
+    subtitle: Seamless Safety Management
+    description: Our Safety Analytics Platform centralizes plant safety, quality, and audit assessments. By integrating user feedback, we ensure a responsive system that meets real-world needs. </br> <strong>Impact</strong> - Increased audit schedule adherence and improved operational efficiency within the first year.
     image: /images/features-02.png
+    buttonLink: '#'
+  tertiary:
+    title: Align Inventory with Consumer Demand
+    subtitle: AI-Driven Fashion Retail Intelligence
+    description: Our AI solution helps fashion brands match inventory with consumer trends, reducing waste and increasing sales. Developed with top-tier data architects and fashion experts, this system forecasts demand accurately.  </br> <strong>Impact</strong> - Estimated savings of $250M in product waste and $350M in new sales.
+    image: /images/features-01.png
+    buttonLink: '#'
 
 
 #Testimonial

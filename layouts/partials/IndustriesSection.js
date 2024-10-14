@@ -17,6 +17,10 @@ const solutionsData = {
     { title: "Live App", description: "Manual real device testing", icon: "📱", link: "/live-app" },
     { title: "App Automate", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
   ],
+  "Retail & Ecommerce": [
+    { title: "Live App", description: "Manual real device testing", icon: "📱", link: "/live-app" },
+    { title: "App Automate", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
+  ],
   "Data Centers": [
     { title: "Digital Twin", description: "Manual real device testing", icon: "📱", link: "/live-app" },
     { title: "Commercial Centers", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
@@ -55,8 +59,16 @@ const SolutionsSection = () => {
                   <h3 className="text-lg">{tab}</h3>
                   <p className="text-sm text-gray-500">
                     {tab === "Featured"
-                      ? "Explore our popular products"
-                      : `Test ${tab.toLowerCase()} tools and solutions`}
+                      ? "The game changing innovations"
+                      : tab === "Manufacturing"
+                        ? "Factories of the future with 10x efficiency and 50% cost reduction"
+                        : tab === "Mining, Oil & Gas"
+                          ? "Enhance safety, optimize operations, and drive sustainability"
+                          : tab === "Retail & Ecommerce"
+                            ? "Eliminate waste and embrace digital-first strategies"
+                            : tab === "Data Centers"
+                              ? "Optimize infrastructure planning and operations"
+                              : ""}
                   </p>
                 </motion.div>
               </button>
