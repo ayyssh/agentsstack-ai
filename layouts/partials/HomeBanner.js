@@ -123,7 +123,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               fill={false}
             />
             <Circle
-              className="circle right-[12%] top-[15%]"
+              className="circle right-[10%] top-[15%]"
               width={20}
               height={20}
             />
@@ -181,7 +181,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
               </div>
             </div>
           </div>
-          <div className="row border-y border-border py-5">
+          {/* <div className="row border-y border-border py-5">
             <div className="animate from-right col-12">
               <Swiper
                 loop={true}
@@ -214,7 +214,7 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                 ))}
               </Swiper>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

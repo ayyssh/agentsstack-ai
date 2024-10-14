@@ -3,9 +3,9 @@
     "title": "Agentsstack",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
-    "logo_width": "240",
-    "logo_height": "34",
+    "logo": "/images/agentsstack-logo.png",
+    "logo_width": "225",
+    "logo_height": "38",
     "logo_text": "Agentsstack"
   },
 
@@ -18,8 +18,8 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "copyright": "Designed & Developed By [Themefisher](https:www.themefisher.com)"
+    "footer_content": "Building a sustainable future or making earth a better place to live.",
+    "copyright": "Designed & Developed By [Night Lab Tech](https://nightlab.tech)"
   },
 
   "contact_info": {
@@ -30,8 +30,8 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Download Now",
-    "link": "https://themefisher.com/products/andromeda-light-nextjs"
+    "label": "Get In Touch",
+    "link": "https://nightlab.tech"
   },
 
   "metadata": {
@@ -42,11 +42,11 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "Get Andromeda Now",
+    "title": "Get Agentsstack Now",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/products/andromeda-light-nextjs"
+      "label": "Get A Callback",
+      "link": "https://nightlab.tech"
     }
   },
 

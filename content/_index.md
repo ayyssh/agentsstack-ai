@@ -1,6 +1,6 @@
 ---
 banner:
-  title: "Revolutionizing Industries with AI-Powered Solutions"
+  title: "Revolutionizing Industries with </br> AI-Powered Solutions"
   image: /images/banner-app.png
   link:
     label: Get In Touch
@@ -45,11 +45,11 @@ features:
 
 #intro
 intro:
-  title: Built Exclusively For You
-  subtitle: SHORT INTRO VIDEO
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.
-  thumbnail: "/images/video-popup.jpg"
-  video_id: dyZcRRWiuuw
+  title: AI powered digitization with <em>Compliance</em>
+  subtitle: Our Vision
+  description: Deliver cutting-edge and high value products to complex problems, with fast delivery to the customers 
+  thumbnail: "/images/video-image.jpg"
+  video_id: vocuu0RByMM
 
 #speciality
 speciality:
