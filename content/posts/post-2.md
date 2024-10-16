@@ -1,9 +1,9 @@
 ---
 title: Product Manager
-image: 
+image: ""
 author:
-  name: 
-  avatar: 
+  name: "" 
+  avatar: ""
 date: 2022-10-04T05:00:00Z
 draft: false
 ---
