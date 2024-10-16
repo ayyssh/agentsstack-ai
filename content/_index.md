@@ -1,6 +1,7 @@
 ---
 banner:
-  title: "Revolutionizing Industries with </br> AI-Powered Solutions"
+  title: "Building a sustainable future"
+  description: "Empowering organizations to unlock their human potential for solving complex problems by simplifying, democratizing, and delivering on technology"
   image: /images/banner-app.png
   link:
     label: Get In Touch
@@ -24,24 +25,27 @@ features:
   title: Unlock Your Business Potential </br> with Cutting-Edge Technology
   description: We deliver high-value, AI-powered solutions to complex problems across various industries. </br> Our mission is to accelerate digital transformation and unlock human potential through innovative technology.
   list:
-    - icon: 'lock' # feather icon: https://feathericons.com/
-      title: Rapid Delivery
-      content: Solutions implemented in weeks, not months
-    - icon: 'wind'
-      title: Cutting-Edge Technology
-      content: Leverage AI, machine learning, and IoT for transformative results
     - icon: 'shield'
-      title: Industry-Specific Expertise
-      content: Tailored solutions for your unique challenges
-    - icon: 'link'
-      title: Proven Track Record
-      content: Successful engagements with global industry leaders
+      title: Uncompromising Security
+      content: Zero trust by design. Security designed for Cloud, server, Apps, APIs or the Edge for Industrial IoT & OT systems, including microcontrollers, sensors, devices.
+    - icon: 'check-circle'
+      title: Compliance
+      content: Gain full control and full visibility over device enrollment, renewal, blocking/revocation, and retirement. Assess and Enforce Compliance against industry or regulatory compliance framework 
+    - icon: 'clipboard'
+      title: Quality assurance and Audit
+      content: Ensure project success with a Dedicated manager, proactive Quality Assurance Audits (QAA), and post-delivery Maintenance, Updates, Support, and Training (MUST) services for ongoing reliability and client satisfaction.
+    - icon: 'fast-forward'
+      title: Fast Delivery Speed
+      content: Global teams deliver projects swiftly, empowering you to achieve strategic goals faster.
+    - icon: 'eye'
+      title: Transparent
+      content: We share the value, impact and ESG reporting with every engagement
 
 #intro
 intro:
-  title: AI powered digitization with <em>Compliance</em>
+  title: How Are We Doing It?
   subtitle: Our Vision
-  description: Deliver cutting-edge and high value products to complex problems, with fast delivery to the customers 
+  description: Your data is the only asset with a terminal value. </br> We are developing high value, AI powered solutions (aka agents) to drive innovation and operational efficiency, </br> deployed in your environment <strong> with cybersecurity first mindset</strong>
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

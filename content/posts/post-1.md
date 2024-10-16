@@ -1,10 +1,10 @@
 ---
-title: The Real Product From the Buyers improvements in Overflow basis.
-image: /images/blog/01.jpg
+title: Operator
+image: ""
 author:
-  name: Abdullah Al Shifat
-  avatar: /images/author/abdullah.jpg
-date: 2022-04-04T05:00:00Z
+  name: ""
+  avatar: ""
+date: 2024-10-01
 draft: false
 ---
 

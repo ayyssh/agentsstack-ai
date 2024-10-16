@@ -6,8 +6,6 @@ import { gsap } from "@lib/gsap";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { useEffect } from "react";
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 const HomeBanner = ({ banner: bannerData, brands }) => {
   useEffect(() => {
@@ -157,7 +155,12 @@ const HomeBanner = ({ banner: bannerData, brands }) => {
                   {markdownify(
                     bannerData.title,
                     "h1",
-                    "mb-8 banner-title opacity-0"
+                    "mb-4 banner-title opacity-0"
+                  )}
+                  {markdownify(
+                    bannerData.description,
+                    "p",
+                    "mb-10 banner-description text-xl"
                   )}
                   <div className="banner-btn opacity-0">
                     <Link

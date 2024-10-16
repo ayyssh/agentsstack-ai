@@ -4,26 +4,31 @@ import { motion } from "framer-motion"; // For animations
 
 const solutionsData = {
   Featured: [
-    { title: "Digital Twin", description: "New infrastructure planning", icon: "🖥️", link: "/live" },
-    { title: "Production and Capacity Planning", description: "For 10x efficient manufacturing", icon: "⚙️", link: "/automate" },
-    { title: "AI Safety System validation", description: "For mining, oil & gas", icon: "👁️", link: "/percy" },
-    { title: "Open Source Data Universe (OSDU)", description: "Data Management", icon: "🧑‍🦽", link: "/accessibility" },
+    { title: "Production and Capacity Planning", description: "", icon: "📈", link: "/" },
+    { title: "Supply Chain Management ", description: "", icon: "🚚", link: "/" },
+    { title: "Industrial IOT", description: "", icon: "🤖", link: "/" },
+    { title: "Digital Twin 2D/3D", description: "", icon: "📁", link: "/" },
+    { title: "New Product Introduction (NPI)", description: "", icon: "💻", link: "/" },
+    { title: "Anomaly detection (security and data privacy)", description: "", icon: "🔒", link: "/" },
+    { title: "Data Integration and Analytics", description: "", icon: "📊", link: "/" },
+    { title: "Safety and Audit", description: "", icon: "🛡️", link: "/" },
   ],
   "Manufacturing": [
-    { title: "Production and Capacity Planning", description: "Unify & track all test cases", icon: "📋", link: "/test-management" },
-    { title: "Quality", description: "Test debugging & insights", icon: "📊", link: "/observability" },
+    { title: "Digital Factory Operating System (DFOS)", description: "Digital Process, MES, IOT, Dashboard and Analytics, Knowledge Graph, Digital Twin, Vision AI", icon: "🏭", link: "/" },
+    { title: "Supply Chain Management", description: "", icon: "🚚", link: "/" },
+    { title: "New Product Introduction (NPI)", description: "", icon: "📦", link: "/" },
+    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
+    { title: "Robotics/Machine Automation", description: "", icon: "🤖", link: "/" },
   ],
-  "Mining, Oil & Gas": [
-    { title: "Live App", description: "Manual real device testing", icon: "📱", link: "/live-app" },
-    { title: "App Automate", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
-  ],
-  "Retail & Ecommerce": [
-    { title: "Live App", description: "Manual real device testing", icon: "📱", link: "/live-app" },
-    { title: "App Automate", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
-  ],
-  "Data Centers": [
-    { title: "Digital Twin", description: "Manual real device testing", icon: "📱", link: "/live-app" },
-    { title: "Commercial Centers", description: "Real device automation cloud", icon: "☁️", link: "/app-automate" },
+  "Energy & Mining": [
+    { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
+    { title: "Demand and Material Allocation", description: "", icon: "📦", link: "/" },
+    { title: "Geospatial Maps for exploration", description: "", icon: "📍", link: "/" },
+    { title: "Pricing Variation Optimization", description: "", icon: "💰", link: "/" },
+    { title: "Data Management", description: "", icon: "📊", link: "/" },
+    { title: "Safety and Audit validation", description: "", icon: "🛡️", link: "/" },
+    { title: "Carbon credit platform", description: "", icon: "🌎", link: "/" },
+    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
   ],
 };
 
@@ -59,16 +64,12 @@ const SolutionsSection = () => {
                   <h3 className="text-lg">{tab}</h3>
                   <p className="text-sm text-gray-500">
                     {tab === "Featured"
-                      ? "The game changing innovations"
+                      ? ""
                       : tab === "Manufacturing"
-                        ? "Factories of the future with 10x efficiency and 50% cost reduction"
-                        : tab === "Mining, Oil & Gas"
-                          ? "Enhance safety, optimize operations, and drive sustainability"
-                          : tab === "Retail & Ecommerce"
-                            ? "Eliminate waste and embrace digital-first strategies"
-                            : tab === "Data Centers"
-                              ? "Optimize infrastructure planning and operations"
-                              : ""}
+                        ? "Operations,Supply Chain, Digital Labs"
+                        : tab === "Energy & Mining"
+                          ? "Production throughput"
+                          : ""}
                   </p>
                 </motion.div>
               </button>

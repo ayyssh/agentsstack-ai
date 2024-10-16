@@ -43,8 +43,6 @@ const BlogPagination = async ({ params }) => {
           />
         </div>
       </section>
-      {/* CTA */}
-      <Cta />
     </GSAPWrapper>
   );
 };
@@ -66,3 +64,4 @@ export async function generateStaticParams() {
 
   return paths;
 }
+

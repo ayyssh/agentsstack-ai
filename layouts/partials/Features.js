@@ -3,7 +3,7 @@
 import { markdownify } from "@lib/utils/textConverter";
 import FeatherIcon from "feather-icons-react/build/FeatherIcon";
 import { useRef } from "react";
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const Features = ({ features }) => {
@@ -25,11 +25,11 @@ const Features = ({ features }) => {
               clickable: true,
               dynamicBullets: true,
             }}
-            // autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 3000 }}
             onBeforeInit={(swiper) => {
               swiper.params.pagination.el = paginationRef.current;
             }}
-            modules={[Pagination]}
+            modules={[Autoplay, Pagination]}
             breakpoints={{
               768: {
                 slidesPerView: 2,

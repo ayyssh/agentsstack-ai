@@ -29,54 +29,12 @@ const About = ({ data }) => {
         {/* About */}
         <div className="section container">
           <div className="row items-center justify-center">
-            <div className="animate md:col-6 md:order-2 lg:col-5">
-              <div className="about-image relative p-[60px]">
-                <ImageFallback
-                  className="animate relative w-full rounded-2xl"
-                  src={about_us.image}
-                  width={425}
-                  height={487}
-                  alt=""
-                />
-                <Circle
-                  className="left-4 top-4 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  width={37}
-                  height={37}
-                  fill={false}
-                  className="right-10 top-20 z-[-1]"
-                />
-                <Circle
-                  className="right-12 top-1/2 -z-[1]"
-                  width={24}
-                  height={24}
-                />
-                <Circle
-                  className="bottom-6 right-6 z-[-1]"
-                  width={85}
-                  height={85}
-                />
-                <Circle
-                  className="left-12 top-1/2 z-[-1]"
-                  width={20}
-                  height={20}
-                />
-                <Circle
-                  className="bottom-12 left-8 z-[1]"
-                  width={47}
-                  height={47}
-                  fill={false}
-                />
-              </div>
-            </div>
-            <div className="animate md:col-6 md:order-1 lg:col-4">
+            <div className="animate col-12 text-center">
               <p>{about_us.subtitle}</p>
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
-              {markdownify(about_us.content, "p", "mt-10")}
+              {markdownify(about_us.content, "p", "mt-10 text-left")}
             </div>
+            
           </div>
         </div>
 
@@ -100,7 +58,7 @@ const About = ({ data }) => {
         </div>
 
         {/* Mission */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="row items-center justify-center">
             <div className="animate md:col-6 lg:col-5">
               <div className="about-image relative p-[60px]">
@@ -151,10 +109,10 @@ const About = ({ data }) => {
               {markdownify(mission.content, "p", "mt-10")}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Video */}
-        <div className="container-xl relative">
+        {/* <div className="container-xl relative">
           <div className="bg-theme absolute left-0 top-0 w-full">
             <Circle
               className="left-[7%] top-[21%]"
@@ -218,10 +176,10 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Clients */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p>{clients.subtitle}</p>
             {markdownify(clients.title, "h2", "section-title mt-4")}
@@ -258,10 +216,10 @@ const About = ({ data }) => {
               ))}
             </Swiper>
           </div>
-        </div>
+        </div> */}
 
         {/* Members */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p>{our_member.subtitle}</p>
             {markdownify(our_member.title, "h2", "section-title mt-4")}
@@ -289,10 +247,10 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Office */}
-        <div className="section container">
+        {/* <div className="section container">
           <div className="animate text-center">
             <p>{our_office.subtitle}</p>
             {markdownify(our_office.title, "h2", "section-title mt-4")}
@@ -322,9 +280,8 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
-      <Cta />
     </>
   );
 };

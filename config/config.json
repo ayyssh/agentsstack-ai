@@ -18,7 +18,7 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Building a sustainable future or making earth a better place to live.",
+    "footer_content": "Unlock Your Business Potential with Cutting-Edge Technology",
     "copyright": "Designed & Developed By [Night Lab Tech](https://nightlab.tech)"
   },
 
@@ -42,10 +42,10 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "Get Agentsstack Now",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas </br> Werat viverra id et aliquet. vulputate egestas sollicitudin.",
+    "title": "Customers",
+    "content": "We partner deeply with customers to dramatically improve their New Product Innovation and production throughput",
     "button": {
-      "label": "Get A Callback",
+      "label": "Get In Touch",
       "link": "https://nightlab.tech"
     }
   },
@@ -54,5 +54,88 @@
     "enable": true,
     "shortname": "themefisher-template",
     "settings": {}
-  }
+  },
+
+  "solutions": [
+    {
+      "name": "Digital Processes",
+      "url": ""
+    },
+    {
+      "name": "MES",
+      "url": ""
+    },
+    {
+      "name": "IOT",
+      "url": ""
+    },
+    {
+      "name": "Factory Digital Twin",
+      "url": ""
+    },
+    {
+      "name": "Computer Vision",
+      "url": ""
+    },
+    {
+      "name": "Production and Capacity Planning",
+      "url": ""
+    },
+    {
+      "name": "Quality",
+      "url": ""
+    },
+    {
+      "name": "Inventory Management",
+      "url": ""
+    },
+    {
+      "name": "Cybersecurity",
+      "url": ""
+    },
+    {
+      "name": "New Product Introductions (NPI)",
+      "url": ""
+    },
+    {
+      "name": "Predictive maintenance",
+      "url": ""
+    },
+    {
+      "name": "Safety and Audit validation",
+      "url": ""
+    },
+    {
+      "name": "Demand and Material Allocation",
+      "url": ""
+    },
+    {
+      "name": "Geospatial Maps for exploration",
+      "url": ""
+    },
+    {
+      "name": "Pricing Variation Optimization",
+      "url": ""
+    },
+    {
+      "name": "Carbon credit origination",
+      "url": ""
+    },
+    {
+      "name": "Asset Management Digital Twin",
+      "url": ""
+    },
+    {
+      "name": "Economic Model Digital Twin",
+      "url": ""
+    },
+    {
+      "name": "Retail Fashion trend analytics and waste reduction.",
+      "url": ""
+    },
+    {
+      "name": "Vulnerability Assessment and Management",
+      "url": ""
+    }
+  ]
 }

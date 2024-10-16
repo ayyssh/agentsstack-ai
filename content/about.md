@@ -1,28 +1,29 @@
 ---
-title: "About"
+title: "Our Mission"
 layout: about
 draft: false
 
 ## about us
 about_us:
-  subtitle: WHO WE ARE
-  title: Hello, We’re Andromeda Here For Your Help
-  content: Your online Health & Fitness companion that offers free assistance on its Facebook Group and provides quality paid guided personal training packages by and through website. We are the first ever, online manifesto in Bangladesh to make place you will select when you think of getting fit
+  subtitle: ""
+  title: We are committed to bring cutting edge innovation to customers to build a sustainable future
+  content: Industrial base, including Energy and Mining particularly in Asia have been left behind on innovation, presenting an opportunity to leapfrog on efficiency and productivity improvement by upto 10x, driven by rapid urbanization, 5G deployments, and the rise of connected devices. </br> Our mission is to revolutionize the companies by driving innovation through data, ML/AI, while keeping the core assets secure and private. Augmenting humans with agents for tasks like scheduling, task management, paperwork, vision, supply chain while letting humans perform the rest which gives them the superpower to solve the hardest problems, drastically improving the overall productivity of the company. </br> Our approach to hire the best talent around the world and last to market philosophy, allows us to create most innovative solutions at optimal cost and fast delivery, generating high value for the customers. 
+
   image: /images/about/01.jpg
 
 ## our works
 works:
-  subtitle: OUR WORKS
-  title: What We Do
+  subtitle: ""
+  title: Our Impact For Good
   list:
-    - title: Building A New Class
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Design For Anyone
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Creative Flair Design
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
-    - title: Building Products
-      content: Decade of engineering under his belt, Jeremie is responsible for technical infrastructure and feature development. In Flow, wherever things just work is understanding developing complex systems
+    - title: Reduced $500M Of Waste Material
+      content: Helped reduce $500M of waste material for a Fortune 100 retail chain
+    - title: Faster Mining Of Metals
+      content: Increased the probability of finding natural resources, enabling faster mining of metals like nickel used in recyclable batteries
+    - title: More Time For In-person Care
+      content: Eliminated time spent in clinical hours automating processes to spend more time for in-person care
+    - title: Improved Safety For Workers
+      content: Improved safety for workers in Mining, Manufacturing and O&G
 
 ## our mission
 mission:

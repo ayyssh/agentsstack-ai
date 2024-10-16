@@ -12,18 +12,17 @@ import IndustriesSection from "@layouts/partials/IndustriesSection";
 const Home = async () => {
   const homepage = await getListPage("content/_index.md");
   const { frontmatter } = homepage;
-  const { banner, brands, features, intro, speciality, testimonial } =
+  const { banner, brands, howWeDo, features, intro, speciality, testimonial } =
     frontmatter;
   return (
     <GSAPWrapper>
       <SeoMeta title="Home" />
       <HomeBanner banner={banner} brands={brands} />
+      <ShortIntro intro={intro} />
       <IndustriesSection/>
       <Features features={features} />
-      <ShortIntro intro={intro} />
-      
-      <SpecialFeatures speciality={speciality} />
-      <Testimonial testimonial={testimonial} />
+      {/* <SpecialFeatures speciality={speciality} />
+      <Testimonial testimonial={testimonial} /> */}
       <Cta />
     </GSAPWrapper>
   );

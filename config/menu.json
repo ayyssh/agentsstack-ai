@@ -5,45 +5,34 @@
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Mission",
       "url": "/about"
     },
     {
-      "name": "Blog",
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "name": "Careers",
       "url": "/posts"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Terms & Conditions",
-          "url": "/terms-policy"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "About",
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Mission",
       "url": "/about"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "Careers",
+      "url": "/careers"
     },
     {
-      "name": "Terms & Conditions",
-      "url": "/terms-policy"
+      "name": "Contact",
+      "url": "/contact"
     }
   ]
 }

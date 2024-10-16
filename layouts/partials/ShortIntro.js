@@ -11,13 +11,13 @@ const ShortIntro = ({ intro }) => {
         <div className="relative px-4 py-[70px]">
           <div className="text-center">
             <div className="animate">
-              <p>{intro.subtitle}</p>
+              {/* <p>{intro.subtitle}</p> */}
               {markdownify(intro.title, "h2", "mt-4 section-title")}
-              {markdownify(intro.description, "p", "mt-10")}
+              {markdownify(intro.description, "p", "mt-10 text-xl font-regular")}
             </div>
-            <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
+            {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
               <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
-            </div>
+            </div> */}
           </div>
           <div className="bg-theme absolute left-0 top-0 w-full">
             <Circle
@@ -57,7 +57,7 @@ const ShortIntro = ({ intro }) => {
               height={37}
               fill={false}
             />
-            <Circle className="right-[33%] top-[52%]" width={20} height={20} />
+            {/* <Circle className="right-[33%] top-[52%]" width={20} height={20} /> */}
             <Circle
               className="bottom-[18%] right-[5%]"
               width={65}
