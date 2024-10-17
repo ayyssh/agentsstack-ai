@@ -34,28 +34,20 @@ const About = ({ data }) => {
               {markdownify(about_us.title, "h2", "section-title bar-left mt-4")}
               {markdownify(about_us.content, "p", "mt-10 text-left")}
             </div>
-            
+            <div className="animate col-12 text-left">
+            <p className="mt-10">
+            Our solutions have created impact for good:
+              <ul className="list-disc pl-10">
+                <li>Helped reduce $250M of waste material for a large retail chain</li>
+                <li>Increased the probability of finding natural resources, enabling faster mining of metals like nickel used in recyclable batteries</li>
+                <li>Eliminated time spent in clinical hours automating processes to spend more time for in-person care</li>
+                <li>Improved safety for workers in Mining, Manufacturing and O&G</li>
+              </ul>
+            </p>
+          </div>
           </div>
         </div>
 
-        {/* Works */}
-        <div className="section container">
-          <div className="animate text-center">
-            <p>{works.subtitle}</p>
-            {markdownify(works.title, "h2", "section-title mt-4")}
-            {markdownify(works.content, "p", "mt-10")}
-          </div>
-          <div className="row mt-10 justify-center">
-            {works.list.map((work, index) => (
-              <div key={"work-" + index} className="mt-10 md:col-6 lg:col-5">
-                <div className="animate text-center md:px-6 xl:px-12">
-                  {markdownify(work.title, "h3", "h4")}
-                  {markdownify(work.content, "p", "mt-2")}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Mission */}
         {/* <div className="section container">

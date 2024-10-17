@@ -1,11 +1,11 @@
 ---
 banner:
-  title: "Building a sustainable future"
+  title: "Building A Sustainable Future"
   description: "Empowering organizations to unlock their human potential for solving complex problems by simplifying, democratizing, and delivering on technology"
   image: /images/banner-app.png
   link:
     label: Get In Touch
-    href: "https://themefisher.com/products/andromeda-nextjs"
+    href: "mailto:xyz@gmail.com"
 
 ##brands
 brands:
@@ -21,31 +21,28 @@ brands:
 
 #features
 features:
-  sub_title: WHAT IS AGENTSSTACK
-  title: Unlock Your Business Potential </br> with Cutting-Edge Technology
-  description: We deliver high-value, AI-powered solutions to complex problems across various industries. </br> Our mission is to accelerate digital transformation and unlock human potential through innovative technology.
+  sub_title: ""
+  title: "Our Benefits"
+  description: ""
   list:
     - icon: 'shield'
-      title: Uncompromising Security
-      content: Zero trust by design. Security designed for Cloud, server, Apps, APIs or the Edge for Industrial IoT & OT systems, including microcontrollers, sensors, devices.
+      title: Uncompromising Security 
+      content: Zero trust by design. Security for Cloud, server, Apps, APIs or the Edge for Industrial IoT & OT systems.
     - icon: 'check-circle'
       title: Compliance
-      content: Gain full control and full visibility over device enrollment, renewal, blocking/revocation, and retirement. Assess and Enforce Compliance against industry or regulatory compliance framework 
-    - icon: 'clipboard'
-      title: Quality assurance and Audit
-      content: Ensure project success with a Dedicated manager, proactive Quality Assurance Audits (QAA), and post-delivery Maintenance, Updates, Support, and Training (MUST) services for ongoing reliability and client satisfaction.
+      content: Assess and Enforce Compliance against industry or regulatory compliance framework.
     - icon: 'fast-forward'
       title: Fast Delivery Speed
       content: Global teams deliver projects swiftly, empowering you to achieve strategic goals faster.
     - icon: 'eye'
       title: Transparent
-      content: We share the value, impact and ESG reporting with every engagement
+      content: We share the value, impact and ESG reporting with every engagement.
 
 #intro
 intro:
   title: How Are We Doing It?
   subtitle: Our Vision
-  description: Your data is the only asset with a terminal value. </br> We are developing high value, AI powered solutions (aka agents) to drive innovation and operational efficiency, </br> deployed in your environment <strong> with cybersecurity first mindset</strong>
+  description: Your data is the only asset with a terminal value. We are developing high value, AI powered solutions (aka agents) to drive innovation and operational efficiency, </br> deployed in your environment keeping the core assets secure and private.
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

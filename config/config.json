@@ -18,7 +18,7 @@
   "params": {
     "tag_manager_id": "",
     "contact_form_action": "#",
-    "footer_content": "Unlock Your Business Potential with Cutting-Edge Technology",
+    "footer_content": "",
     "copyright": "Designed & Developed By [Night Lab Tech](https://nightlab.tech)"
   },
 
@@ -42,7 +42,7 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "Customers",
+    "title": "",
     "content": "We partner deeply with customers to dramatically improve their New Product Innovation and production throughput",
     "button": {
       "label": "Get In Touch",
@@ -130,7 +130,7 @@
       "url": ""
     },
     {
-      "name": "Retail Fashion trend analytics and waste reduction.",
+      "name": "Retail Fashion trend analytics & waste reduction.",
       "url": ""
     },
     {

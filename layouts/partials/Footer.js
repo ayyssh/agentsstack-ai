@@ -11,14 +11,14 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const { email, phone, location } = config.contact_info;
   return (
-    <footer className="">
-      <div className="container">
-      <div className="row border-y border-border py-12">
-          <div className="animate mt-8 md:col-12 lg:col-6 lg:mt-0">
+    <footer className="bg-[#f8f9fa] w-full">
+      <div className="container-xl mx-auto">
+        <div className="row border-y border-border py-12 w-full">
+          <div className="animate ">
             <h3 className="h5">Solutions</h3>
-            <div className="flex mt-5">
-              <ul className="mr-10 leading-10">
-                {solutions.slice(0, Math.ceil(solutions.length / 2)).map((menu) => (
+            <div className="flex mt-5 w-full">
+              <ul className="mr-10 leading-10 w-full">
+                {solutions.slice(0, Math.ceil(solutions.length / 4)).map((menu) => (
                   <li key={menu.name}>
                     <Link
                       href={menu.url}
@@ -29,8 +29,40 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-              <ul className="leading-10">
-                {solutions.slice(Math.ceil(solutions.length / 2)).map((menu) => (
+              <ul className="mr-10 leading-10 hidden xl:block w-full">
+                {solutions.slice(
+                  Math.ceil(solutions.length / 4),
+                  Math.ceil(solutions.length / 2)
+                ).map((menu) => (
+                  <li key={menu.name}>
+                    <Link
+                      href={menu.url}
+                      className="hover:text-primary hover:underline"
+                    >
+                      {menu.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="mr-10 leading-10 hidden xl:block w-full">
+                {solutions.slice(
+                  Math.ceil(solutions.length / 2),
+                  Math.ceil(solutions.length * (3 / 4))
+                ).map((menu) => (
+                  <li key={menu.name}>
+                    <Link
+                      href={menu.url}
+                      className="hover:text-primary hover:underline"
+                    >
+                      {menu.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="leading-10 hidden xl:block w-full">
+                {solutions.slice(
+                  Math.ceil(solutions.length * (3 / 4))
+                ).map((menu) => (
                   <li key={menu.name}>
                     <Link
                       href={menu.url}
@@ -49,22 +81,14 @@ const Footer = () => {
             <Logo />
             {markdownify(footer_content, "p", "mt-3")}
           </div>
-          {/* <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Socials</h3>
-            <div className="mt-5">
-              {email && <Link href={`mailto:${email}`}>{email}</Link>}
-              <Social source={social} className="social-icons mt-5" />
-            </div>
-          </div> */}
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
             <h3 className="h5">Quick Links</h3>
-            {/* footer menu */}
             <ul className="mt-5 leading-10">
               {menu.footer.map((menu) => (
                 <li key={menu.name}>
                   <Link
                     href={menu.url}
-                    className=" hover:text-primary hover:underline"
+                    className="hover:text-primary hover:underline"
                   >
                     {menu.name}
                   </Link>
@@ -72,21 +96,8 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          {/* <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
-            <h3 className="h5">Location & Contact</h3>
-            <ul className="mt-5 leading-10">
-              <li>{markdownify(location)}</li>
-              {phone && (
-                <li>
-                  <Link href={`tel:${phone}`}>{phone}</Link>
-                </li>
-              )}
-            </ul>
-          </div> */}
         </div>
-        
-        {/* copyright */}
-        <div className=" py-6 text-center">
+        <div className="py-6 text-center">
           {markdownify(copyright, "p", "footer-copy-write")}
         </div>
       </div>

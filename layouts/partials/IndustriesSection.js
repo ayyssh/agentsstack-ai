@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion"; // For animations
+import { markdownify } from "@lib/utils/textConverter";
 
 const solutionsData = {
   Featured: [
@@ -14,11 +15,11 @@ const solutionsData = {
     { title: "Safety and Audit", description: "", icon: "🛡️", link: "/" },
   ],
   "Manufacturing": [
-    { title: "Digital Factory Operating System (DFOS)", description: "Digital Process, MES, IOT, Dashboard and Analytics, Knowledge Graph, Digital Twin, Vision AI", icon: "🏭", link: "/" },
     { title: "Supply Chain Management", description: "", icon: "🚚", link: "/" },
     { title: "New Product Introduction (NPI)", description: "", icon: "📦", link: "/" },
     { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
     { title: "Robotics/Machine Automation", description: "", icon: "🤖", link: "/" },
+    { title: "Digital Factory Operating System (DFOS)", description: "Digital Process, MES, IOT, Dashboard and Analytics, Knowledge Graph, Digital Twin, Vision AI", icon: "🏭", link: "/", columnSpan: 3 }
   ],
   "Energy & Mining": [
     { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
@@ -38,75 +39,97 @@ const SolutionsSection = () => {
   const handleTabClick = (tab) => setActiveTab(tab);
 
   return (
-    <div className="container mx-auto py-12">
-      <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-800">
-        Cutting-edge Solutions for a sustainable future 
-      </h2>
-      <div className="flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden bg-white">
-        {/* Tabs */}
-        <div className="md:w-1/4 bg-gradient-to-b from-blue-50 to-blue-100">
-          <div className="flex flex-col divide-y">
-            {Object.keys(solutionsData).map((tab) => (
-              <button
-                key={tab}
-                className={`py-6 px-6 text-left transition-all font-semibold ${
-                  activeTab === tab
-                    ? "bg-blue-200 text-blue-700 border-l-4 border-blue-600"
-                    : "text-gray-600 hover:bg-gray-100"
-                }`}
-                onClick={() => handleTabClick(tab)}
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <h3 className="text-lg">{tab}</h3>
-                  <p className="text-sm text-gray-500">
-                    {tab === "Featured"
-                      ? ""
-                      : tab === "Manufacturing"
-                        ? "Operations,Supply Chain, Digital Labs"
-                        : tab === "Energy & Mining"
-                          ? "Production throughput"
-                          : ""}
-                  </p>
-                </motion.div>
-              </button>
-            ))}
+    <section className="section pt-0">
+      <div className="container-xl">
+        <div className="relative px-4 py-[10px]">
+          <div className="text-center">
+            <div className="animate">
+              {/* <p>{intro.subtitle}</p> */}
+              {markdownify("Test the Agents", "h2", "mt-4 section-title")}
+            </div>
+            {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
+              <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
+            </div> */}
           </div>
         </div>
+        <div className="flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden bg-white">
+          {/* Tabs */}
+          <div className="md:w-1/4 bg-[#eff6fe]">
+            <div className="flex flex-col divide-y">
+              {Object.keys(solutionsData).map((tab) => (
+                <button
+                  key={tab}
+                  className={`py-6 px-6 text-left transition-all font-semibold ${activeTab === tab
+                    ? "bg-[#023047] text-[#8ecae6] border-l-4 border-[#001D4A]"
+                    : "text-[#eb6565] hover:bg-gray-100"
+                    }`}
+                  onClick={() => handleTabClick(tab)}
+                >
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <h3 className="text-lg text-[#fff]">
+                      {activeTab === tab ? (
+                        <span className="text-[#fff]">{tab}</span>
+                      ) : (
+                        <span className="text-[#113241]">{tab}</span>
+                      )}
+                    </h3>
+                    <p className="text-sm text-gray-500">
+                      {tab === "Featured"
+                        ? ""
+                        : tab === "Manufacturing"
+                          ? "Operations,Supply Chain, Digital Labs"
+                          : tab === "Energy & Mining"
+                            ? "Production throughput"
+                            : ""}
+                    </p>
+                  </motion.div>
+                </button>
+              ))}
+            </div>
+          </div>
 
-        {/* Content Grid */}
-        <div className="md:w-3/4 p-8 bg-gradient-to-b from-white to-blue-50">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {solutionsData[activeTab].map((solution, index) => (
-              <a
-                key={index}
-                href={solution.link}
-                className="block p-6 bg-white shadow-md hover:shadow-lg rounded-lg transition-all"
-              >
-                <div className="flex items-center space-x-4">
-                  <span className="text-5xl">{solution.icon}</span>
-                  <div>
-                    <h4 className="text-xl font-bold text-gray-800">
-                      {solution.title}
-                    </h4>
-                    <p className="text-gray-600">{solution.description}</p>
+          {/* Content Grid */}
+          <div className="md:w-3/4 p-8 bg-[#dbeafe]">
+            <motion.div
+              key={activeTab}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4"
+            >
+              {solutionsData[activeTab].map((solution, index) => (
+                <a
+                  key={index}
+                  href={solution.link}
+                  className={`
+                    flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg rounded-lg transition-all
+                    ${solution.columnSpan === 1 ? "sm:col-span-1 md:col-span-1 lg:col-span-1" : ""}
+                    ${solution.columnSpan === 2 ? "sm:col-span-2 md:col-span-2 lg:col-span-2" : ""}
+                    ${solution.columnSpan === 3 ? "sm:col-span-3 md:col-span-3 lg:col-span-3" : ""}
+                    ${solution.columnSpan === 4 ? "sm:col-span-4 md:col-span-4 lg:col-span-4" : ""}
+                  `}
+                >
+                  <div className="flex items-center space-x-2">
+                    <span className="text-2xl">{solution.icon}</span>
+                    <div className="flex flex-col items-start justify-center">
+                      <h5 className="font-semibold text-gray-900 text-sm">
+                        {solution.title}
+                      </h5>
+                      <p className="text-gray-700 text-xs">{solution.description}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            ))}
-          </motion.div>
+                </a>
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
+    </section >
+
   );
 };
 

@@ -6,11 +6,11 @@
         "body": "#ffff",
         "border": "#dee2e6",
         "border_secondary": "#ffece4",
-        "theme_light": "#fffaf3",
+        "theme_light": "#fff",
         "theme_dark": "#1a202c"
       },
       "text_color": {
-        "default": "#666",
+        "default": "#001D4A",
         "dark": "#222",
         "light": "#ceced0"
       }
