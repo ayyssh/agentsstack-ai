@@ -5,7 +5,7 @@ banner:
   image: /images/banner-app.png
   link:
     label: Get In Touch
-    href: "mailto:xyz@gmail.com"
+    href: "mailto:aanchal.k.gupta@gmail.com"
 
 ##brands
 brands:
@@ -42,7 +42,7 @@ features:
 intro:
   title: How Are We Doing It?
   subtitle: Our Vision
-  description: Your data is the only asset with a terminal value. We are developing high value, AI powered software (aka agents) to drive innovation and operational efficiency, deployed in your environment keeping the core assets secure and private.
+  description: Your data is the only asset with a terminal value. Test and deploy, AI powered software (aka agents) to drive innovation and operational efficiency with robust governance and security.
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

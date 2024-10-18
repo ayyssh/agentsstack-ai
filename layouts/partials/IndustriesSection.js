@@ -10,7 +10,7 @@ const solutionsData = {
     { title: "Industrial IOT", description: "", icon: "🤖", link: "/" },
     { title: "Digital Twin 2D/3D", description: "", icon: "📁", link: "/" },
     { title: "New Product Introduction (NPI)", description: "", icon: "💻", link: "/" },
-    { title: "Anomaly detection (security and data privacy)", description: "", icon: "🔒", link: "/" },
+    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
     { title: "Data Integration and Analytics", description: "", icon: "📊", link: "/" },
     { title: "Safety and Audit", description: "", icon: "🛡️", link: "/" },
   ],

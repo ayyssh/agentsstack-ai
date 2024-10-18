@@ -31,7 +31,7 @@
   "nav_button": {
     "enable": true,
     "label": "Get In Touch",
-    "link": "https://nightlab.tech"
+    "link": "mailto:aanchal.k.gupta@gmail.com"
   },
 
   "metadata": {
@@ -46,7 +46,7 @@
     "content": "We partner deeply with customers to dramatically improve their New Product Innovation and production throughput",
     "button": {
       "label": "Get In Touch",
-      "link": "https://nightlab.tech"
+      "link": "mailto:aanchal.k.gupta@gmail.com"
     }
   },
 
@@ -130,11 +130,7 @@
       "url": ""
     },
     {
-      "name": "Retail Fashion trend analytics & waste reduction.",
-      "url": ""
-    },
-    {
-      "name": "Vulnerability Assessment and Management",
+      "name": "Fashion Trend Analysis",
       "url": ""
     }
   ]

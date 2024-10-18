@@ -20,7 +20,7 @@ const SimpleTextSection = ({ content }) => {
 
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 flex items-center justify-center">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left column with the heading */}
           <div className="lg:col-span-1">
@@ -30,7 +30,7 @@ const SimpleTextSection = ({ content }) => {
           </div>
 
           {/* Right column with the description */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 flex items-center justify-center">
             <div className="prose max-w-full text-gray-800 leading-relaxed">
               {markdownify(content.description, "p", "mt-4")}
             </div>

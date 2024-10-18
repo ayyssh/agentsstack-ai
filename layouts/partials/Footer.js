@@ -9,70 +9,28 @@ import Link from "next/link";
 const Footer = () => {
   const solutions = config.solutions;
   const { copyright, footer_content } = config.params;
-  const { email, phone, location } = config.contact_info;
+
   return (
     <footer className="bg-[#f8f9fa] w-full">
       <div className="container-xl mx-auto">
-        <div className="row border-y border-border py-12 w-full">
-          <div className="animate ">
-            <h3 className="h5">Solutions</h3>
-            <div className="flex mt-5 w-full">
-              <ul className="mr-10 leading-10 w-full">
-                {solutions.slice(0, Math.ceil(solutions.length / 4)).map((menu) => (
-                  <li key={menu.name}>
-                    <Link
-                      href={menu.url}
-                      className="hover:text-primary hover:underline"
-                    >
-                      {menu.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <ul className="mr-10 leading-10 hidden xl:block w-full">
-                {solutions.slice(
-                  Math.ceil(solutions.length / 4),
-                  Math.ceil(solutions.length / 2)
-                ).map((menu) => (
-                  <li key={menu.name}>
-                    <Link
-                      href={menu.url}
-                      className="hover:text-primary hover:underline"
-                    >
-                      {menu.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <ul className="mr-10 leading-10 hidden xl:block w-full">
-                {solutions.slice(
-                  Math.ceil(solutions.length / 2),
-                  Math.ceil(solutions.length * (3 / 4))
-                ).map((menu) => (
-                  <li key={menu.name}>
-                    <Link
-                      href={menu.url}
-                      className="hover:text-primary hover:underline"
-                    >
-                      {menu.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <ul className="leading-10 hidden xl:block w-full">
-                {solutions.slice(
-                  Math.ceil(solutions.length * (3 / 4))
-                ).map((menu) => (
-                  <li key={menu.name}>
-                    <Link
-                      href={menu.url}
-                      className="hover:text-primary hover:underline"
-                    >
-                      {menu.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+        <div className="border-y border-border py-12 w-full">
+          <div className="animate">
+            <h3 className="h5 mb-4">Solutions</h3>
+            {/* Responsive grid layout for solutions */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-6 lg:gap-4">
+              {solutions.map((menu) => (
+                <div
+                  key={menu.name}
+                  className="leading-6 sm:leading-8 md:leading-9 lg:leading-8 py-1 sm:py-1.5 lg:py-2 border-b sm:border-b-0 lg:border-none"
+                >
+                  <Link
+                    href={menu.url}
+                    className="hover:text-primary hover:underline text-base"
+                  >
+                    • {menu.name}
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -83,12 +41,12 @@ const Footer = () => {
           </div>
           <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
             <h3 className="h5">Quick Links</h3>
-            <ul className="mt-5 leading-10">
+            <ul className="mt-5 leading-8">
               {menu.footer.map((menu) => (
                 <li key={menu.name}>
                   <Link
                     href={menu.url}
-                    className="hover:text-primary hover:underline"
+                    className="hover:text-primary hover:underline text-base"
                   >
                     {menu.name}
                   </Link>
@@ -106,4 +64,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
