@@ -39,7 +39,7 @@ const SolutionsSection = () => {
   const handleTabClick = (tab) => setActiveTab(tab);
 
   return (
-    <section className="section pt-0">
+    <section className="section pt-0 mt-10">
       <div className="container-xl">
         <div className="relative px-4 py-[10px]">
           <div className="text-center">

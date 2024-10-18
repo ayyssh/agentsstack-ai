@@ -24,7 +24,7 @@ const SimpleTextSection = ({ content }) => {
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left column with the heading */}
           <div className="lg:col-span-1">
-            <h2 className="text-3xl lg:text-5xl font-bold text-gray-800">
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-800">
               {content.title}
             </h2>
           </div>
@@ -32,7 +32,7 @@ const SimpleTextSection = ({ content }) => {
           {/* Right column with the description */}
           <div className="lg:col-span-1">
             <div className="prose max-w-full text-gray-800 leading-relaxed">
-              {markdownify(content.description)}
+              {markdownify(content.description, "p", "mt-4")}
             </div>
           </div>
         </div>

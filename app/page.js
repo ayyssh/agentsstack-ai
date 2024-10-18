@@ -20,8 +20,9 @@ const Home = async () => {
     <GSAPWrapper>
       <SeoMeta title="Home" />
       <HomeBanner banner={banner} brands={brands} />
-      <IndustriesSection/>
       <SimpleTextSection content={intro} />
+      <IndustriesSection/>
+      
       <Features features={features} />
       {/* <SpecialFeatures speciality={speciality} />
       <Testimonial testimonial={testimonial} /> */}

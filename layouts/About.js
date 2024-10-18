@@ -36,9 +36,9 @@ const About = ({ data }) => {
             </div>
             <div className="animate col-12 text-left">
             <p className="mt-10">
-            Our solutions have created impact for good:
+            The solutions have created impact for good:
               <ul className="list-disc pl-10">
-                <li>Helped reduce $250M of waste material for a large retail chain</li>
+                <li>Helped reduce $250M of waste for a large retail chain</li>
                 <li>Increased the probability of finding natural resources, enabling faster mining of metals like nickel used in recyclable batteries</li>
                 <li>Eliminated time spent in clinical hours automating processes to spend more time for in-person care</li>
                 <li>Improved safety for workers in Mining, Manufacturing and O&G</li>
