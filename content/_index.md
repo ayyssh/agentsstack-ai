@@ -1,10 +1,10 @@
 ---
 banner:
-  title: "Building A Sustainable Future"
+  title: "Digital Transformation </br>in your hands"
   description: "Empowering organizations to unlock their human potential for solving complex problems by simplifying, democratizing, and delivering on technology"
   image: /images/banner-app.png
   link:
-    label: Get In Touch
+    label: 
     href: "mailto:aanchal.k.gupta@gmail.com"
 
 ##brands
@@ -40,9 +40,9 @@ features:
 
 #intro
 intro:
-  title: How Are We Doing It?
+  title: ""
   subtitle: Our Vision
-  description: Your data is the only asset with a terminal value. Test and deploy, AI powered software (aka agents) to drive innovation and operational efficiency with robust governance and security.
+  description: Your data is the only asset with a terminal value. Deploy high value, ML/AI powered solutions (aka agents) to drive innovation and operational efficiency, with robust data governance and sovereignty. 
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

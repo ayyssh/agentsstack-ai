@@ -4,37 +4,33 @@ import { motion } from "framer-motion"; // For animations
 import { markdownify } from "@lib/utils/textConverter";
 
 const solutionsData = {
-  Featured: [
-    { title: "Production and Capacity Planning", description: "", icon: "📈", link: "/" },
-    { title: "Supply Chain Management ", description: "", icon: "🚚", link: "/" },
-    { title: "Industrial IOT", description: "", icon: "🤖", link: "/" },
-    { title: "Digital Twin 2D/3D", description: "", icon: "📁", link: "/" },
+  "Manufacturing": [
+    { title: "Carbon Credit Platform", description: "", icon: "💚", link: "/" },
     { title: "New Product Introduction (NPI)", description: "", icon: "💻", link: "/" },
     { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
-    { title: "Data Integration and Analytics", description: "", icon: "📊", link: "/" },
-    { title: "Safety and Audit", description: "", icon: "🛡️", link: "/" },
+    { title: "Plant Asset Management", description: "", icon: "🏗️", link: "/" },
+    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📁", link: "/" },
+    { title: "Supply Chain Planning", description: "", icon: "🚚", link: "/" },
+    { title: "Data Integration & Analytics", description: "", icon: "📊", link: "/" },
+    { title: "Production Scheduling", description: "", icon: "🕒", link: "/" },
+    { title: "Digital Factory Operating System (DFOS)", description: "Process Automation/MES/MOM, IIOT, Dashboard and Analytics, Safety and Audit, Vision AI", icon: "🏭", link: "/", columnSpan: 4 }
   ],
-  "Manufacturing": [
-    { title: "Supply Chain Management", description: "", icon: "🚚", link: "/" },
-    { title: "New Product Introduction (NPI)", description: "", icon: "📦", link: "/" },
-    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
-    { title: "Robotics/Machine Automation", description: "", icon: "🤖", link: "/" },
-    { title: "Digital Factory Operating System (DFOS)", description: "Digital Process, MES, IOT, Dashboard and Analytics, Knowledge Graph, Digital Twin, Vision AI", icon: "🏭", link: "/", columnSpan: 3 }
-  ],
-  "Energy & Mining": [
+  "Energy and Materials": [
     { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
     { title: "Demand and Material Allocation", description: "", icon: "📦", link: "/" },
     { title: "Geospatial Maps for exploration", description: "", icon: "📍", link: "/" },
     { title: "Pricing Variation Optimization", description: "", icon: "💰", link: "/" },
-    { title: "Data Management", description: "", icon: "📊", link: "/" },
+    { title: "Exploration Data Management", description: "", icon: "📊", link: "/" },
     { title: "Safety and Audit validation", description: "", icon: "🛡️", link: "/" },
     { title: "Carbon credit platform", description: "", icon: "🌎", link: "/" },
     { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
   ],
+  "Retail": [
+  ],
 };
 
 const SolutionsSection = () => {
-  const [activeTab, setActiveTab] = useState("Featured");
+  const [activeTab, setActiveTab] = useState("Manufacturing");
 
   const handleTabClick = (tab) => setActiveTab(tab);
 
@@ -45,7 +41,7 @@ const SolutionsSection = () => {
           <div className="text-center">
             <div className="animate">
               {/* <p>{intro.subtitle}</p> */}
-              {markdownify("Test the Agents", "h2", "mt-4 section-title")}
+              {markdownify("Talk to Industry Experts", "h2", "mt-4 section-title")}
             </div>
             {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
               <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
@@ -81,9 +77,9 @@ const SolutionsSection = () => {
                       {tab === "Featured"
                         ? ""
                         : tab === "Manufacturing"
-                          ? "Operations,Supply Chain, Digital Labs"
-                          : tab === "Energy & Mining"
-                            ? "Production throughput"
+                          ? "Factory of the future: High efficiency, Optimal cost"
+                          : tab === "Energy and Materials"
+                            ? "Exploration, Battery mining and innovation"
                             : ""}
                     </p>
                   </motion.div>

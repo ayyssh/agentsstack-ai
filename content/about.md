@@ -1,5 +1,5 @@
 ---
-title: "Our Mission"
+title: "Building a Sustainable Future"
 layout: about
 draft: false
 

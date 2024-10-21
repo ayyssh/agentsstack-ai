@@ -42,7 +42,7 @@ const HomeBanner = ({ banner }) => {
           <h1 className="text-5xl lg:text-7xl font-bold mb-6">
             {markdownify(banner.title)}
           </h1>
-          <p className="banner-subtitle text-lg lg:text-2xl mb-8 text-[#023047] opacity-90">
+          <p className="banner-subtitle text-lg lg:text-2xl mb-8 mt-3 text-[#023047] opacity-90">
             {markdownify(banner.description)}
           </p>
           <div className="banner-btn">
