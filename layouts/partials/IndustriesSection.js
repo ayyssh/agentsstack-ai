@@ -24,9 +24,7 @@ const solutionsData = {
     { title: "Safety and Audit validation", description: "", icon: "🛡️", link: "/" },
     { title: "Carbon credit platform", description: "", icon: "🌎", link: "/" },
     { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
-  ],
-  "Retail": [
-  ],
+  ]
 };
 
 const SolutionsSection = () => {
