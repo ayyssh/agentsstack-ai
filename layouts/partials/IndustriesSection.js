@@ -5,25 +5,33 @@ import { markdownify } from "@lib/utils/textConverter";
 
 const solutionsData = {
   "Manufacturing": [
-    { title: "Carbon Credit Platform", description: "", icon: "💚", link: "/" },
-    { title: "New Product Introduction (NPI)", description: "", icon: "💻", link: "/" },
-    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
-    { title: "Plant Asset Management", description: "", icon: "🏗️", link: "/" },
-    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📁", link: "/" },
-    { title: "Supply Chain Planning", description: "", icon: "🚚", link: "/" },
-    { title: "Data Integration & Analytics", description: "", icon: "📊", link: "/" },
-    { title: "Production Scheduling", description: "", icon: "🕒", link: "/" },
-    { title: "Digital Factory Operating System (DFOS)", description: "Process Automation/MES/MOM, IIOT, Dashboard and Analytics, Safety and Audit, Vision AI", icon: "🏭", link: "/", columnSpan: 4 }
+    { title: "Predictive Maintenance", description: "", icon: "🔧", link: "/" },
+    { title: "Production & Capacity Planning", description: "", icon: "📊", link: "/" },
+    { title: "Plant Asset Management", description: "", icon: "🏭", link: "/" },
+    { title: "Anamoly Detection (Security)", description: "", icon: "🔒", link: "/" },
+    { title: "Digital Factory Operating System (DFOS)", description: "Process Automation/MES/MOM, IIOT, Dashboard and Analytics, Safety and Audit, Vision AI", icon: "🔩", link: "/", columnSpan: 3 },
+    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📈", link: "/" , columnSpan: 1}
   ],
   "Energy and Materials": [
     { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
-    { title: "Demand and Material Allocation", description: "", icon: "📦", link: "/" },
     { title: "Geospatial Maps for exploration", description: "", icon: "📍", link: "/" },
-    { title: "Pricing Variation Optimization", description: "", icon: "💰", link: "/" },
-    { title: "Exploration Data Management", description: "", icon: "📊", link: "/" },
+    { title: "Demand and Material Allocation", description: "", icon: "📦", link: "/" },
+    { title: "Well decommission (Carbon Credit origination)", description: "", icon: "🔒", link: "/" },
+    { title: "Data Management (OSDU)", description: "", icon: "📊", link: "/" },
     { title: "Safety and Audit validation", description: "", icon: "🛡️", link: "/" },
-    { title: "Carbon credit platform", description: "", icon: "🌎", link: "/" },
-    { title: "Cybersecurity", description: "", icon: "🔒", link: "/" },
+    { title: "Pricing Variation Optimization", description: "", icon: "💰", link: "/" },
+    { title: "Digital Twin", description: "", icon: "🌎", link: "/" },
+    
+  ],
+  "Cross Industry": [
+    { title: "Cybersecurity", description: "", icon: "⛽️", link: "/" },
+    { title: "New Product Introduction (NPI)", description: "", icon: "📦", link: "/" },
+    { title: "Supply Chain Planning", description: "", icon: "📍", link: "/" },
+    { title: "Digital Twin 2D / 3D", description: "", icon: "💰", link: "/" },
+    { title: "Data Integration & Analytics", description: "", icon: "📊", link: "/" },
+    { title: "Data Management Knowledge Graph", description: "", icon: "🛡️", link: "/" },
+    { title: "Carbon Credit Organisation", description: "", icon: "🌎", link: "/" },
+    { title: "Safety AI", description: "", icon: "🔒", link: "/" },
   ]
 };
 
@@ -39,7 +47,7 @@ const SolutionsSection = () => {
           <div className="text-center">
             <div className="animate">
               {/* <p>{intro.subtitle}</p> */}
-              {markdownify("Talk to Industry Experts", "h2", "mt-4 section-title")}
+              {markdownify("Find the right AI agents for your business", "h4", "mt-4 text-white")}
             </div>
             {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
               <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
@@ -54,7 +62,7 @@ const SolutionsSection = () => {
                 <button
                   key={tab}
                   className={`py-6 px-6 text-left transition-all font-semibold ${activeTab === tab
-                    ? "bg-[#023047] text-[#8ecae6] border-l-4 border-[#001D4A]"
+                    ? "bg-[#D1E0E8] text-[#8ecae6] border-l-4 border-[#001D4A]"
                     : "text-[#eb6565] hover:bg-gray-100"
                     }`}
                   onClick={() => handleTabClick(tab)}
@@ -66,7 +74,7 @@ const SolutionsSection = () => {
                   >
                     <h3 className="text-lg text-[#fff]">
                       {activeTab === tab ? (
-                        <span className="text-[#fff]">{tab}</span>
+                        <span className="text-[#023047]">{tab}</span>
                       ) : (
                         <span className="text-[#113241]">{tab}</span>
                       )}
@@ -75,9 +83,11 @@ const SolutionsSection = () => {
                       {tab === "Featured"
                         ? ""
                         : tab === "Manufacturing"
-                          ? "Factory of the future: High efficiency, Optimal cost"
+                          ? "Factory Operations"
                           : tab === "Energy and Materials"
-                            ? "Exploration, Battery mining and innovation"
+                            ? "Production Throughput"
+                            : tab === "Cross Industry"
+                              ? "Innovation / Sustainability"
                             : ""}
                     </p>
                   </motion.div>
@@ -128,3 +138,4 @@ const SolutionsSection = () => {
 };
 
 export default SolutionsSection;
+

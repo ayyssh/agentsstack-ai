@@ -42,12 +42,13 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "",
-    "content": "We partner deeply with customers to dramatically improve their New Product Innovation and production throughput",
+    "title": "<span style=\"font-size:0.6em; color:#D1E0E8;\">Introducing platform </span> </br> <span style=\"font-weight:bold; color:#DF3F3E0;\"> Avyka</span>",
+    "content": "Build your own agents",
     "button": {
-      "label": "Get In Touch",
+      "label": "",
       "link": "mailto:aanchal.k.gupta@gmail.com"
-    }
+    },
+    "image": "/images/avyka.jpg"
   },
 
   "disqus": {

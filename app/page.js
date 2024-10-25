@@ -7,7 +7,7 @@ import ShortIntro from "@layouts/partials/ShortIntro";
 import SpecialFeatures from "@layouts/partials/SpecialFeatures";
 import Testimonial from "@layouts/partials/Testimonial";
 import { getListPage } from "@lib/contentParser";
-import IndustriesSection from "@layouts/partials/IndustriesSection";
+
 import SimpleTextSection from "@layouts/partials/SimpleTextSection";
 
 
@@ -21,12 +21,14 @@ const Home = async () => {
       <SeoMeta title="Home" />
       <HomeBanner banner={banner} brands={brands} />
       <SimpleTextSection content={intro} />
-      <IndustriesSection/>
+      
+      
+      <Cta />
       
       <Features features={features} />
       {/* <SpecialFeatures speciality={speciality} />
       <Testimonial testimonial={testimonial} /> */}
-      {/* <Cta /> */}
+      
     </GSAPWrapper>
   );
 };

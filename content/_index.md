@@ -1,7 +1,7 @@
 ---
 banner:
-  title: "Digital Transformation </br>in your hands"
-  description: "Empowering organizations to unlock their human potential for solving complex problems by simplifying, democratizing, and delivering on technology"
+  title: "Digital Transformation </br> made simpler"
+  description: "Deploy high value, ML/AI powered solutions (aka agents) to drive innovation and operational efficiency, with robust data governance and sovereignty."
   image: /images/banner-app.png
   link:
     label: 
@@ -40,9 +40,9 @@ features:
 
 #intro
 intro:
-  title: ""
+  title: "Our Vision"
   subtitle: Our Vision
-  description: Your data is the only asset with a terminal value. Deploy high value, ML/AI powered solutions (aka agents) to drive innovation and operational efficiency, with robust data governance and sovereignty. 
+  description: Empower organizations to unlock their human potential for solving problems by simplifying, democratizing, and delivering on technology.
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

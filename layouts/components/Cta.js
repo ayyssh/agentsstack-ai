@@ -1,63 +1,43 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
-import Circle from "./Circle";
 import ImageFallback from "./ImageFallback";
+import IndustriesSection from "@layouts/partials/IndustriesSection";
 
 function Cta() {
-  const { title, content, button, enable } = config.call_to_action;
+  const { title, content, button, enable, image } = config.call_to_action;
   if (!enable) return;
 
   return (
-    <section className="cta section pt-0">
-      <div className="container-xl">
-        <div className="section relative px-4 text-center">
-          <div className="animate">
-            {markdownify(title, "h2", "section-title")}
-            {markdownify(content, "p", "mt-10 text-xl font-regular")}
-            <Link href={button.link} className="btn btn-primary mt-10">
-              {button.label}
-            </Link>
-          </div>
-          <div className="bg-theme animated-bg absolute top-0 left-0 w-full after:hidden">
-            <ImageFallback
-              src="/images/wave.svg"
-              fill={true}
-              sizes="100vw"
-              alt="bg wave"
-            />
-            <Circle
-              className="left-[10%] top-12"
-              width={32}
-              height={32}
-              fill={false}
-            />
-            <Circle className="left-[3%] bottom-[13%]" width={85} height={85} />
-            <Circle
-              className="left-[15%] bottom-[35%]"
-              width={47}
-              height={47}
-              fill={false}
-            />
-
-            <Circle className="right-[12%] top-[12%]" width={20} height={20} />
-            <Circle
-              className="right-[2%] bottom-[30%]"
-              width={73}
-              height={73}
-              fill={false}
-            />
-            <Circle
-              className="right-[19%] bottom-[16%]"
-              width={37}
-              height={37}
-              fill={false}
-            />
+    <section
+      className="cta section bg-[#023047] mx-auto max-w-[92%] px-[10%] rounded-lg mt-6"
+      style={{ backgroundImage: "linear-gradient(rgba(2, 48, 71, 1), rgba(2, 48, 71, 1))" }}
+    >
+      <div className="container-xl grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="order-2 lg:order-1 justify-center relative z-10">
+          <div className="absolute inset-0  rounded-lg" style={{ zIndex: -1 }}></div>
+          <ImageFallback
+            src={image}
+            width={500}
+            height={800}
+            className="object-cover border-4 border-solid border-white rounded-lg"
+            alt={title}
+          />
+        </div>
+        <div className="order-1 lg:order-2 flex flex-col justify-right">
+          <div className="text-white flex items-center justify-center h-full">
+            <div className="text-center">
+              {markdownify(title, "h2", "section-title text-white")}
+              {markdownify(content, "p", "mt-6 text-xl font-regular text-white")}
+            </div>
           </div>
         </div>
       </div>
+      <IndustriesSection/>
     </section>
+    
   );
 }
 
 export default Cta;
+
