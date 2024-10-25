@@ -30,7 +30,7 @@ const solutionsData = {
     { title: "Digital Twin 2D / 3D", description: "", icon: "💰", link: "/" },
     { title: "Data Integration & Analytics", description: "", icon: "📊", link: "/" },
     { title: "Data Management Knowledge Graph", description: "", icon: "🛡️", link: "/" },
-    { title: "Carbon Credit Organisation", description: "", icon: "🌎", link: "/" },
+    { title: "Carbon Credit Origination", description: "", icon: "🌎", link: "/" },
     { title: "Safety AI", description: "", icon: "🔒", link: "/" },
   ]
 };
