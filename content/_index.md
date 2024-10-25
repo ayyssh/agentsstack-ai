@@ -42,7 +42,7 @@ features:
 intro:
   title: "Our Vision"
   subtitle: Our Vision
-  description: Empower organizations to unlock their human potential for solving problems by simplifying, democratizing, and delivering on technology.
+  description: Empower organizations to unlock their human potential for solving complex problems by simplifying, democratizing, and delivering on technology.
   thumbnail: "/images/video-image.jpg"
   video_id: vocuu0RByMM
 

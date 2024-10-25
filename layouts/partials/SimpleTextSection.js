@@ -25,7 +25,7 @@ const SimpleTextSection = ({ content }) => {
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left column with the heading */}
           <div className="lg:col-span-1 flex items-center justify-center">
-            <h2 className="text-2xl lg:text-4xl font-bold text-gray-800">
+            <h2 className="text-2xl lg:text-4xl text-gray-700">
               {content.title}
             </h2>
           </div>

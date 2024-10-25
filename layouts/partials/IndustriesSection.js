@@ -9,7 +9,7 @@ const solutionsData = {
     { title: "Production & Capacity Planning", description: "", icon: "📊", link: "/" },
     { title: "Plant Asset Management", description: "", icon: "🏭", link: "/" },
     { title: "Anamoly Detection (Security)", description: "", icon: "🔒", link: "/" },
-    { title: "Digital Factory Operating System (DFOS)", description: "Process Automation/MES/MOM, IIOT, Dashboard and Analytics, Safety and Audit, Vision AI", icon: "🔩", link: "/", columnSpan: 3 },
+    { title: "Manufacturing Enterprise System", description: "Digital Process/MES, Dashboard and Analytics, Vision AI", icon: "🔩", link: "/", columnSpan: 3 },
     { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📈", link: "/" , columnSpan: 1}
   ],
   "Energy and Materials": [
@@ -47,7 +47,7 @@ const SolutionsSection = () => {
           <div className="text-center">
             <div className="animate">
               {/* <p>{intro.subtitle}</p> */}
-              {markdownify("Find the right AI agents for your business", "h4", "mt-4 text-white")}
+              {markdownify("Find the right pre-trained industry solutions", "h4", "mt-4 text-white")}
             </div>
             {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
               <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
@@ -83,11 +83,11 @@ const SolutionsSection = () => {
                       {tab === "Featured"
                         ? ""
                         : tab === "Manufacturing"
-                          ? "Factory Operations"
+                          ? "Efficient Factory Operations"
                           : tab === "Energy and Materials"
                             ? "Production Throughput"
                             : tab === "Cross Industry"
-                              ? "Innovation / Sustainability"
+                              ? "Innovation & Sustainability"
                             : ""}
                     </p>
                   </motion.div>
@@ -113,8 +113,8 @@ const SolutionsSection = () => {
                     flex items-center justify-center p-4 bg-white shadow-md hover:shadow-lg rounded-lg transition-all
                     ${solution.columnSpan === 1 ? "sm:col-span-1 md:col-span-1 lg:col-span-1" : ""}
                     ${solution.columnSpan === 2 ? "sm:col-span-2 md:col-span-2 lg:col-span-2" : ""}
-                    ${solution.columnSpan === 3 ? "sm:col-span-3 md:col-span-3 lg:col-span-3" : ""}
-                    ${solution.columnSpan === 4 ? "sm:col-span-4 md:col-span-4 lg:col-span-4" : ""}
+                    ${solution.columnSpan === 3 ? "sm:col-span-3 md:col-span-3 lg:col-span-3 p-4" : ""}
+                    ${solution.columnSpan === 4 ? "sm:col-span-4 md:col-span-4 lg:col-span-4 p-2" : ""}
                   `}
                 >
                   <div className="flex items-center space-x-2">
