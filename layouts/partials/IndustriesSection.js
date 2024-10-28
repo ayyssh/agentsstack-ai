@@ -9,8 +9,10 @@ const solutionsData = {
     { title: "Production & Capacity Planning", description: "", icon: "📊", link: "/" },
     { title: "Plant Asset Management", description: "", icon: "🏭", link: "/" },
     { title: "Anamoly Detection (Security)", description: "", icon: "🔒", link: "/" },
-    { title: "Manufacturing Enterprise System", description: "Digital Process/MES, Dashboard and Analytics, Vision AI", icon: "🔩", link: "/", columnSpan: 3 },
-    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📈", link: "/" , columnSpan: 1}
+    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📈", link: "/"},
+    { title: "Robotics/Machine Automation", description: "", icon: "🤖", link: "/"},
+    { title: "Manufacturing Enterprise System", description: "Digital Process/MES, Dashboard and Analytics, Vision AI", icon: "🔩", link: "/", columnSpan: 2},
+    
   ],
   "Energy and Materials": [
     { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
