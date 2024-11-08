@@ -42,7 +42,7 @@
 
   "call_to_action": {
     "enable": true,
-    "title": "<span style=\"font-size:0.6em; color:#D1E0E8;\">Introducing platform </span> </br> <span style=\"font-weight:bold; color:#DF3F3E0;\">Pulse</span><span style=\"font-size:0.6em; font-weight:400; color:#D1E0E8;\"><sup>&trade;</sup></span>",
+    "title": "<span style=\"font-weight:bold; color:#DF3F3E0;\">Platform Pulse</span>",
     "content": "Build your own agents",
     "button": {
       "label": "",
@@ -59,15 +59,15 @@
 
   "solutions": [
     {
+      "name": "Cybersecurity",
+      "url": ""
+    },
+    {
       "name": "Digital Processes",
       "url": ""
     },
     {
       "name": "MES",
-      "url": ""
-    },
-    {
-      "name": "IOT",
       "url": ""
     },
     {
@@ -91,47 +91,19 @@
       "url": ""
     },
     {
-      "name": "Cybersecurity",
-      "url": ""
-    },
-    {
       "name": "New Product Introductions (NPI)",
       "url": ""
     },
     {
-      "name": "Predictive maintenance",
+      "name": "Predictive Maintenance",
       "url": ""
     },
     {
-      "name": "Safety and Audit validation",
+      "name": "Safety and Audit Validation",
       "url": ""
     },
     {
-      "name": "Demand and Material Allocation",
-      "url": ""
-    },
-    {
-      "name": "Geospatial Maps for exploration",
-      "url": ""
-    },
-    {
-      "name": "Pricing Variation Optimization",
-      "url": ""
-    },
-    {
-      "name": "Carbon credit origination",
-      "url": ""
-    },
-    {
-      "name": "Asset Management Digital Twin",
-      "url": ""
-    },
-    {
-      "name": "Economic Model Digital Twin",
-      "url": ""
-    },
-    {
-      "name": "Fashion Trend Analysis",
+      "name": "Asset Management",
       "url": ""
     }
   ]

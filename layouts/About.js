@@ -35,15 +35,6 @@ const About = ({ data }) => {
               {markdownify(about_us.content, "p", "mt-10 text-left")}
             </div>
             <div className="animate col-12 text-left">
-            <p className="mt-10">
-            The solutions have created impact for good:
-              <ul className="list-disc pl-10">
-                <li>Increased the predictability by 20x of finding natural resources, enabling faster mining of metals like nickel, copper used in recyclable batteries</li>
-                <li>Reductions in carbon emissions by 10-30% through more efficient manufacturing processes.</li>
-                <li>Improved safety for workers in Mining, Manufacturing, O&G etc.</li>
-                <li>Helped reduce waste significantly for a retail store with better demand and supply tracking</li>
-              </ul>
-            </p>
           </div>
           </div>
         </div>
