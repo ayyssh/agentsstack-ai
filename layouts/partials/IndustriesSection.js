@@ -4,41 +4,31 @@ import { motion } from "framer-motion"; // For animations
 import { markdownify } from "@lib/utils/textConverter";
 
 const solutionsData = {
-  "Manufacturing": [
-    { title: "Predictive Maintenance", description: "", icon: "🔧", link: "/" },
-    { title: "Production & Capacity Planning", description: "", icon: "📊", link: "/" },
-    { title: "Plant Asset Management", description: "", icon: "🏭", link: "/" },
-    { title: "Anamoly Detection (Security)", description: "", icon: "🔒", link: "/" },
-    { title: "Digital Twin 2D/3D Knowledge Graph", description: "", icon: "📈", link: "/"},
-    { title: "Robotics/Machine Automation", description: "", icon: "🤖", link: "/"},
-    { title: "Manufacturing Enterprise System", description: "Digital Process/MES, Dashboard and Analytics, Vision AI", icon: "🔩", link: "/", columnSpan: 2},
-    
+  "Security and Compliance/ESG": [
+    { title: "Cybersecurity", description: "", icon: "🔐", link: "/",  },
+    { title: "Compliance", description: "", icon: "✅", link: "/" , },
+    { title: "Safety and Audit", description: "", icon: "🛟", link: "/", },
   ],
-  "Energy and Materials": [
-    { title: "Well Resource optimization", description: "", icon: "⛽️", link: "/" },
-    { title: "Geospatial Maps for exploration", description: "", icon: "📍", link: "/" },
-    { title: "Demand and Material Allocation", description: "", icon: "📦", link: "/" },
-    { title: "Well decommission (Carbon Credit origination)", description: "", icon: "🔒", link: "/" },
-    { title: "Data Management (OSDU)", description: "", icon: "📊", link: "/" },
-    { title: "Safety and Audit validation", description: "", icon: "🛡️", link: "/" },
-    { title: "Pricing Variation Optimization", description: "", icon: "💰", link: "/" },
-    { title: "Digital Twin", description: "", icon: "🌎", link: "/" },
-    
+  "Digital Operations": [
+    { title: "Digital Processes/Quality", description: "", icon: "✨", link: "/" },
+    { title: "OEE", description: "", icon: "⚙️", link: "/" },
+    { title: "Visual AI", description: "", icon: "🔍", link: "/" },
+    { title: "Inventory  Optimization", description: "", icon: "📈", link: "/" },
+    { title: "Supply Chain monitoring", description: "", icon: "🚀", link: "/" },
+    { title: "Production and Capacity planning", description: "", icon: "📊", link: "/" },
   ],
-  "Cross Industry": [
-    { title: "Cybersecurity", description: "", icon: "⛽️", link: "/" },
-    { title: "New Product Introduction (NPI)", description: "", icon: "📦", link: "/" },
-    { title: "Supply Chain Planning", description: "", icon: "📍", link: "/" },
-    { title: "Digital Twin 2D / 3D", description: "", icon: "💰", link: "/" },
-    { title: "Data Integration & Analytics", description: "", icon: "📊", link: "/" },
-    { title: "Data Management Knowledge Graph", description: "", icon: "🛡️", link: "/" },
-    { title: "Carbon Credit Origination", description: "", icon: "🌎", link: "/" },
-    { title: "Safety AI", description: "", icon: "🔒", link: "/" },
-  ]
+  "Data Management": [
+    { title: "Knowledge Graph", description: "", icon: "💡", link: "/" },
+    { title: "Digital Twin", description: "", icon: "🤖", link: "/" },
+  ],
+  "Digital Lab / R&D": [
+    { title: "New Product Introduction (NPI)", description: "", icon: "🔩", link: "/" }
+  ],
+  
 };
 
 const SolutionsSection = () => {
-  const [activeTab, setActiveTab] = useState("Manufacturing");
+  const [activeTab, setActiveTab] = useState("Security and Compliance/ESG");
 
   const handleTabClick = (tab) => setActiveTab(tab);
 
@@ -82,14 +72,14 @@ const SolutionsSection = () => {
                       )}
                     </h3>
                     <p className="text-sm text-gray-500">
-                      {tab === "Featured"
+                      {tab === "Security and Compliance/ESG"
                         ? ""
-                        : tab === "Manufacturing"
-                          ? "Efficient Factory Operations"
-                          : tab === "Energy and Materials"
-                            ? "Production Throughput"
-                            : tab === "Cross Industry"
-                              ? "Innovation & Sustainability"
+                        : tab === "Digital Operations"
+                          ? ""
+                          : tab === "Data Management"
+                            ? ""
+                            : tab === "Digital Lab / R&D"
+                              ? ""
                             : ""}
                     </p>
                   </motion.div>
