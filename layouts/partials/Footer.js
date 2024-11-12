@@ -54,6 +54,25 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+          <div className="animate mt-8 md:col-6 lg:col-3 lg:mt-0">
+            <h3 className="h5">Contact</h3>
+            <p className="mt-5 leading-7 text-sm">
+              <Link
+                href="/contact"
+                className="hover:text-primary hover:underline"
+              >
+                Send a message
+              </Link>
+            </p>
+            <p className="leading-7 text-sm">
+              <Link
+                href="mailto:contact@agentsstack.com"
+                className="hover:text-primary hover:underline"
+              >
+                contact@agentsstack.com
+              </Link>
+            </p>
+          </div>
         </div>
         <div className="py-6 text-center">
           {markdownify(copyright, "p", "footer-copy-write")}

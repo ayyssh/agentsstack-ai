@@ -39,7 +39,7 @@ const SolutionsSection = () => {
           <div className="text-center">
             <div className="animate">
               {/* <p>{intro.subtitle}</p> */}
-              {markdownify("Find the right pre-trained industry solutions", "h4", "mt-4 text-white")}
+              {markdownify("Buy or build industry solutions", "h4", "mt-4 text-white")}
             </div>
             {/* <div className="mx-auto mt-10 h-full max-h-[394px] w-full max-w-[716px]">
               <VideoPopup id={intro.video_id} thumbnail={intro.thumbnail} />
